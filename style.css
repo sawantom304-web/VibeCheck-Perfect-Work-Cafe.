@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: white;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)),
+    url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: black;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cup {
+  font-size: 60px;
+}
+
+.steam span {
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background: white;
+  opacity: 0;
+  left: 50%;
+  animation: steam 3s infinite;
+}
+
+.steam span:nth-child(2) {
+  left: 45%;
+}
+.steam span:nth-child(3) {
+  left: 55%;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.search {
+  text-align: center;
+  padding: 40px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.cafe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.card {
+  width: 280px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  color: white;
+  cursor: pointer;
+}
+
+.map-section {
+  text-align: center;
+  padding: 60px;
+}
+
+.map-box {
+  width: 80%;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.reviews-section {
+  text-align: center;
+  padding: 60px;
+}
+
+.review-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 60px;
+}
+
+.availability {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.desk-container {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.desk {
+  background: green;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.booked {
+  background: red;
+}

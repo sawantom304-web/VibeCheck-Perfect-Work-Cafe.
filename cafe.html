@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>VibeCheck Cafe Finder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2 class="logo">☕ VibeCheck</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#cafes">Cafes</a></li>
+<li><a href="#map">Nearby Cafes</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="coffee">
+
+<div class="cup">☕</div>
+
+<div class="steam">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+<h1>Find Your Perfect Work Cafe</h1>
+
+<p>Look up cafes based on their vibe, WiFi speed, and just how comfy their workspaces really are.</p>
+
+</section>
+
+<section class="search">
+
+<h2>Search Cafe by Vibe</h2>
+
+<div class="search-box">
+
+<select id="vibeFilter">
+<option value="all">All Vibes</option>
+<option value="quiet">Quiet</option>
+<option value="social">Social</option>
+<option value="busy">Busy</option>
+</select>
+
+<button onclick="filterCafes()" class="btn">Search</button>
+
+</div>
+
+</section>
+
+<section id="cafes" class="cafe-container">
+
+<div class="card" data-vibe="quiet">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=60">
+
+<h3>Chai & Code Cafe</h3>
+
+<p>📶 WiFi: 120 Mbps</p>
+<p>🔌 Outlets: 12</p>
+<p>🌿 Vibe: Quiet</p>
+
+<p class="desc">If you need a calm spot to focus or study, this place is just right.</p>
+
+<a href="availability.html">
+<button class="btn">Check Availability</button>
+</a>
+
+</div>
+
+<div class="card" data-vibe="social">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=60">
+
+<h3>Filter Coffee Hub</h3>
+
+<p>📶 WiFi: 90 Mbps</p>
+<p>🔌 Outlets: 8</p>
+<p>🌿 Vibe: Social</p>
+
+<p class="desc">Perfect for team meetings, catching up with friends, or meeting new people.</p>
+
+<a href="availability.html">
+<button class="btn">Check Availability</button>
+</a>
+
+</div>
+
+<div class="card" data-vibe="busy">
+
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=60">
+
+<h3>Masala Beans Cafe</h3>
+
+<p>📶 WiFi: 110 Mbps</p>
+<p>🔌 Outlets: 10</p>
+<p>🌿 Vibe: Busy</p>
+
+<p class="desc">Lively atmosphere, great coffee, and plenty of snacks—if you love energy, you'll love it here.</p>
+
+<a href="availability.html">
+<button class="btn">Check Availability</button>
+</a>
+
+</div>
+
+</section>
+
+<section id="map" class="map-section">
+
+<h2>Nearby Cafes (Panvel Area)</h2>
+
+<div class="map-box">
+
+<iframe
+src="https://maps.google.com/maps?q=panvel%20cafes&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<section id="reviews" class="reviews-section">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-card">
+⭐️⭐️⭐️⭐️⭐️ <br>
+Honestly the best place to get work done—super quiet and perfect for studying.
+</div>
+
+<div class="review-card">
+⭐️⭐️⭐️⭐️ <br>
+Loved the vibe here! Fast WiFi and just a great atmosphere.
+</div>
+
+<div class="review-card">
+⭐️⭐️⭐️⭐️⭐️ <br>
+The chai here is amazing, and it's always so peaceful.
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About VibeCheck</h2>
+
+<p>
+VibeCheck helps students, freelancers, and remote workers track down the best local cafes to get work done. You can easily filter spots by the vibe, WiFi speed, and workspace comfort—so you find what you need, fast.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 VibeCheck Remote Work Cafe Finder</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
